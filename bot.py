@@ -69,7 +69,7 @@ except ValidationError as _:
     raise KeyError('TOKEN variable must be set.')
 
 try:
-    db = redis.Redis(host=environ.get('HOST', default='localhost'),
+    db = redis.Redis(host=environ.get('HOST', default='redis_database'),
                      port=environ.get('PORT', default=6379), db=0)
     db.ping()
     log.info('Database launched successfully')
@@ -221,7 +221,7 @@ async def films_data(url: str, session: aiohttp.ClientSession):
     async with session.get(url, allow_redirects=False) as response:
         data = await response.read()
     film_names = []
-    soup = bs(data, 'lxml')
+    soup = bs(data, 'html.parser')
     for places in range(1, 21):
         film_names.append(
             soup.find('tr', {'id': f'top250_place_{places}'}).find('a', {'class': 'all'}).text

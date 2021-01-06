@@ -1,4 +1,4 @@
-version: 3.7
+version: "3.7"
 
 services:
   telegram_bot:
@@ -7,7 +7,7 @@ services:
       dockerfile: docker/Dockerfile
     container_name: telebot-v1
     environment:
-      TOKEN: 
+      TOKEN: 1543075321:AAGu6MIPJ0JwxqTA6XESuCy6818By3anTpU 
     restart: always
     links:
       - redis_database
@@ -17,4 +17,4 @@ services:
     ports:
     - "6379:6379"
     environment:
-      HOST: 0.0.0.0
+      HOST: redis_database
