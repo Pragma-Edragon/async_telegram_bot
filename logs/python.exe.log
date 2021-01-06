@@ -1,0 +1,7 @@
+2021-01-06 16:23:10,801 (+2218) [INFO] P9644 T13552 <bot.py:75, <module> at bot> 'application': Database launched successfully
+2021-01-06 16:23:10,966 (+2383) [INFO] P9644 T13552 <C:\Users\Riven\PycharmProjects\videoBot\venv\lib\site-packages\aiogram\utils\executor.py:351, _welcome at executor> 'aiogram': Bot: RivenAsync_bot [@RivenGame_testbot]
+2021-01-06 16:23:12,064 (+3480) [WARNING] P9644 T13552 <C:\Users\Riven\PycharmProjects\videoBot\venv\lib\site-packages\aiogram\utils\executor.py:347, _skip_updates at executor> 'aiogram': Updates were skipped successfully.
+2021-01-06 16:23:12,065 (+3481) [INFO] P9644 T13552 <C:\Users\Riven\PycharmProjects\videoBot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:336, start_polling at dispatcher> 'aiogram.dispatcher.dispatcher': Start polling.
+2021-01-06 16:23:23,848 (+15264) [INFO] P9644 T13552 <bot.py:108, send_welcome at bot> 'application': User: rive_n registered with ID: 746430418
+2021-01-06 16:26:43,310 (+214726) [INFO] P9644 T13552 <bot.py:179, get_weather at bot> 'application': User with username: rive_n and ID: 746430418 requested weather.
+2021-01-06 16:26:47,176 (+218593) [INFO] P9644 T13552 <bot.py:179, get_weather at bot> 'application': User with username: rive_n and ID: 746430418 requested weather.

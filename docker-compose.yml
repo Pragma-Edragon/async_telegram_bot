@@ -1,0 +1,20 @@
+version: 3.7
+
+services:
+  telegram_bot:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: telebot-v1
+    environment:
+      TOKEN: 
+    restart: always
+    links:
+      - redis_database
+
+  redis_database:
+    image: redis
+    ports:
+    - "6379:6379"
+    environment:
+      HOST: 0.0.0.0
